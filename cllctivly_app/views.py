@@ -7,4 +7,11 @@ class HomeView(TemplateView):
 
     def get(self,request):
         return render(request,self.template_name)
+    
 
+
+class DiscoverView(TemplateView):
+    template_name = "discover.html"
+
+    def get(self,request):
+        return render(request,self.template_name)
